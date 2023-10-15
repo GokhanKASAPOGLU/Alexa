@@ -16,4 +16,7 @@ You may need to install the following Python libraries to run the application:
 - [pywhatkit](https://pypi.org/project/pywhatkit/)
 - [PyAudio](https://pypi.org/project/PyAudio/)
 ```bash
-pip install SpeechRecognition pyttsx3 pywhatkit PyAudio
+pip install SpeechRecognition
+pip install pyttsx3
+pip install pywhatkit
+pip install PyAudio
