@@ -4,7 +4,7 @@ Alexa Voice Assistant is a voice-activated assistant application built in Python
 
 ## Features
 
-- Searches and plays songs on YouTube.
+- Searches and plays songs on YouTube in your browser.
 - Listens to commands continuously until exit.
 
 ## Requirements
