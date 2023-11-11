@@ -15,13 +15,15 @@ def take_command():
     command = ("")
     try:
         with sr.Microphone() as source:
-            talk("Listening...")
             print("Listening...")
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             if command.lower().startswith("alexa"):
                 command = command.replace("Alexa ", "")
                 print(command)
+            else:
+                print(command)
+                command = ("")
     except sr.UnknownValueError:
         print("Could not understand audio")
     except sr.RequestError:
@@ -43,9 +45,7 @@ def run_alexa():
         print(command)
         exit()
     else:
-        talk("Please say the command again.")
-        print("Please say the command again.")
-        print(command)
+        pass
 
 while True:
     run_alexa()
